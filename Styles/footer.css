@@ -1,0 +1,79 @@
+.footer{
+    background-color: #000;
+    max-width: 100%;
+    padding: 40px 20px;
+    color: #a3a3a3;
+}
+.footerContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+.footerText{
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: #cccccc;
+}
+.footerContact li{
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+}
+.footerContact li::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: block;
+    left: -60px;
+    top: -10px;
+    transform: scale(.8);
+}
+.mail::before{
+    background: url(../images/mail.svg) no-repeat center center;
+}
+.call::before{
+    background: url(../images/phone.svg) no-repeat center center;
+}
+.insta::before{
+    background: url(../images/insta.svg) no-repeat center center;
+}
+.footerContact a{
+    color: #fff;
+}
+.footerCopy{
+    text-align: center;
+    font-size: 1.125rem;
+}
+@media(max-width: 800px){
+    .footerContainer{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .footerContact{
+        width: fit-content;
+        margin: 0 auto 40px;
+    }
+    .footerContact li{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 600px){
+    .footerContainer{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .footerContact li{
+        font-size: 1rem;
+    }
+    .footerContact li::before{
+        transform: scale(.5);
+        top: -15px;
+        left: -45px;
+    }
+}

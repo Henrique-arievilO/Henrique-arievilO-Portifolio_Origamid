@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     font-family: "Fira Sans", Arial, sans-serif;
@@ -16,6 +19,7 @@ ul{
 
 img{
     max-width: 100%;
+    height: auto;
     display: block;
 } /*Isso garante que a imagem sempre será 100% dentro do container*/
 
