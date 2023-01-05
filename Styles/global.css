@@ -18,3 +18,26 @@ img{
     max-width: 100%;
     display: block;
 } /*Isso garante que a imagem sempre será 100% dentro do container*/
+
+.subtitle{
+    font-size: 8rem;
+    font-family: "Playfair Display", Times, serif;
+    word-break: break-all;
+    line-height: 1;
+    text-transform: uppercase;
+    max-width: 4.5ch;
+}
+
+@media(max-width: 800px){
+    .subtitle{
+        font-size: 5rem;
+        text-transform: capitalize;
+        max-width: initial;
+        text-align: center;
+    }
+}
+@media(max-width: 600px){
+    .subtitle{
+        font-size: 3rem;
+    }
+}
