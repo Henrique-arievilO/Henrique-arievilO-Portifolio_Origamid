@@ -1,0 +1,117 @@
+.intro{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 100px;
+}
+.intro h1{
+    font-size: 4.5rem;
+    line-height: 1.125;
+    font-family: "Playfair Display", Times, serif;
+    position: relative;
+}
+.intro h1::before{
+    content: '';
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url(../images/detail.svg) no-repeat;
+    position: absolute;
+    left: -50px;
+    top: 20px;
+}
+.intro span{
+    color: #701CDA;
+}
+.intro p{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    position: relative;
+    color: #525252;
+}
+.intro p::before{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 80px;
+    background: url(../images/pin.svg) no-repeat;
+    position: absolute;
+    left: -30px;
+    top: 0px;
+}
+
+@media(max-width: 1000px){
+    .intro h1{
+        font-size: 3rem;
+    }
+    .intro h1::before{
+        top: 5px;
+    }
+}
+@media(max-width: 800px){
+    .intro{
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    .intro h1{
+        font-size: 2rem;
+    }
+    .intro h1::before{
+        transform: scale(.5);
+        top: -17px;
+        left: -60px;
+    }
+    .intro p::before{
+        transform: scale(.75);
+        top: 15px;
+        left: -30px;
+    }
+}
+@media(max-width: 600px){
+    .intro{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 20px;
+        padding: 10px 40px;
+    }
+    .intro img{
+        width: 50%;
+    }
+    .intro h1{
+        font-size: 3rem;
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .intro h1::before{
+        top: -10px;
+    }
+    .intro p{
+        width: fit-content;
+        margin: 1rem auto;
+        text-align: center;
+    }
+    .intro p::before{
+        top: -5px;
+    }
+}
+@media(max-width: 400px){
+    .intro h1{
+        font-size: 2rem;        
+    }
+    .intro h1::before{
+        top: -20px;        
+    }
+    .intro p{
+        font-size: 1rem;
+        width: 25ch;
+    }
+    .intro p::before{
+        transform: scale(.5);
+        top: -20px;
+        left: -15px;
+    }
+}
